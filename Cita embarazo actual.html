@@ -22,6 +22,9 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->		
 	</head>
@@ -117,23 +120,40 @@
 								<h2>Embarazo Actual</h2>
 							</header>
 							<form>
-							<h3>Peso</h3>
-							<input name="peso" id="peso" type="number" max="999" step=".1" placeholder="En kilogramos" required>
+							<h3>Embarazo Actual</h3>
+							<input type="radio" name="EActual" value="1" data-toggle="collapse" href="#collapseExample">SI   <input type="radio" name="EActual" value="2">NO
 							<br><br>
-							<h3>Talla</h3>
-							<input name="talla" id="talla" type="number" max="999" step=".1" placeholder="En centimetros" required>
+					<div class="collapse" id="collapseExample">
+							<h3>Semana de Gestación</h3>
+							<input name="gestacion" id="gestacion" type="number" max="99"  placeholder="Numero de semana" required>
 							<br><br>
-							<h3>Presión arterial</h3>
-							<input name="presion_ar" id="presion_ar" type="number" max="999" placeholder="mmHg" required>
+							<h3>Tratamiento Antiretroviral</h3>
+							<input type="radio" name="TAnti" value="1" data-toggle="collapse" href="#collapseExample1">SI   <input type="radio" name="TAnti" value="2">NO
 							<br><br>
-							<h3>Frecuencia cardiaca</h3>
-							<input name="frecuencia_car" id="frecuencia_car" type="number" max="999" placeholder="LPM" required>
+						<div class="collapse" id="collapseExample1">	
+							<h3>Semana Inicial de Tratamiento</h3>
+							<input name="semInicial" id="semInicial" type="number" max="999" placeholder="Numero de la semana de gestacion en que inicio el tratamiento" required>
 							<br><br>
-							<h3>Frecuencia respitaroria</h3>
-							<input name="frecuencia_res" id="frecuencia_res" type="number" max="999" placeholder="RPM" required>
+						</div>	
+							<h3>Esquemas</h3>
+							<input type="radio" name="Esquemas" value="1" data-toggle="collapse" href="#collapseExample2">SI   <input type="radio" name="Esquemas" value="2">NO
 							<br><br>
-							<h3>Temperatura</h3>
-							<input name="temperatura" id="temperatura" type="number" max="999" step=".1" placeholder="En °C" required><br><br>								    
+						<div class="collapse" id="collapseExample2">
+							<h3>¿Cuales?</h3>
+							<input name="ECuales" id="Ecuales" type="number" max="99" placeholder="¿Cuales Esquemas?" required><br><br>
+						</div>		
+							<h3>Profilaxis Intraparto</h3>
+							<input type="radio" name="PIntra" value="1" data-toggle="collapse" href="#collapseExample3">SI   <input type="radio" name="PIntra" value="2">NO
+							<br><br>	
+						<div class="collapse" id="collapseExample3">	
+							<h3>Tipo</h3>
+							<input name="TipoEmb" id="TipoEmb" type="text"  placeholder="Tipo de Profilaxis" required><br><br>	
+							<h3>Tiempo</h3>
+							<input name="TiempoEmb" id="TiempoEmb" type="number" max="999"  placeholder="Tiempo de Profilaxis" required><br><br>
+						</div>		
+					</div>
+
+
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>
 					</div>					
