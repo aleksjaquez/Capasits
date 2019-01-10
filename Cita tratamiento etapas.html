@@ -48,7 +48,7 @@
 		</div>
 		<!-- Main -->
 		<div id="main">
-			<h3 align="right" >Paciente: José Carlos Gámez Delgado</h3>		
+			<h3 align="right">Paciente: José Carlos Gámez Delgado</h3>		
 			<div class="container">
 				<div class="row"> 
 					<!-- Sidebar -->
@@ -56,7 +56,7 @@
 						<section>
 							<ul class="nav nav-pills" aria-orientation="vertical">
 								<li class="nav-item">
-									<a class="nav-link active">Datos iniciales</a>									
+									<a class="nav-link disabled">Datos iniciales</a>									
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -68,7 +68,7 @@
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link disabled">Tratamiento</a> <!--por etapas -->
+									<a class="nav-link active">Tratamiento</a> <!--por etapas -->
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -114,26 +114,21 @@
 					<div id="content" class="8u skel-cell-important">
 						<section>
 							<header>
-								<h2>Datos iniciales</h2>
+								<h2>Tratamiento</h2>
 							</header>
 							<form>
-							<h3>Peso</h3>
+							<h3>Etapa</h3>
 							<input name="peso" id="peso" type="number" max="999" step=".1" placeholder="En kilogramos" required>
 							<br><br>
-							<h3>Talla</h3>
+							<h3>Fármaco</h3>
 							<input name="talla" id="talla" type="number" max="999" step=".1" placeholder="En centimetros" required>
 							<br><br>
-							<h3>Presión arterial</h3>
-							<input name="presion_ar" id="presion_ar" type="number" max="999" placeholder="mmHg" required>
+							<h3>Fecha de inicio </h3>
+							<input name="presion_ar" id="presion_ar" type="date" max="999" placeholder="mmHg" required>
 							<br><br>
-							<h3>Frecuencia cardiaca</h3>
-							<input name="frecuencia_car" id="frecuencia_car" type="number" max="999" placeholder="LPM" required>
-							<br><br>
-							<h3>Frecuencia respitaroria</h3>
-							<input name="frecuencia_res" id="frecuencia_res" type="number" max="999" placeholder="RPM" required>
-							<br><br>
-							<h3>Temperatura</h3>
-							<input name="temperatura" id="temperatura" type="number" max="999" step=".1" placeholder="En °C" required><br><br>								    
+							<h3>Fecha de término </h3>
+							<input name="frecuencia_car" id="frecuencia_car" type="date" max="999" placeholder="LPM" required>
+							<br><br>								    
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>
 					</div>					
