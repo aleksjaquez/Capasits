@@ -1,0 +1,21 @@
+id_estadificacion, estadio, fecha, tratamiento, suspension, motivo, terminacion, Paciente_ID_paciente
+
+
+id_tratamiento_antifimico, fecha_diagnostico, localizacion, metodo_diagnostico, tb, curado, trata_virgen, recaida, fecha_recaida, trata_recaida, trata_tb_multi, Cita_id_cita
+
+
+id_tratamiendo_etapas, etapa, farmaco, fecha_ini, fecha_fin, Cita_id_cita
+
+
+id_embarazo_act, embarazo_act, semana_ges, trata_antire_opc, semana_ini_trata_antire, esquemas_ant, esquemas_ant_cuales, profilaxis_intra, profilaxis_intra_tipo, profilaxis_intra_tiempo, Tratamiendo_profilaxis_id_trata_profilaxis
+
+
+id_trata_profilaxis, fecha_ini, farmaco, indicacion, suspension, fecha_susp, motivos_susp, profilaxis_farmaco
+
+
+id_antiretroviral, tratamiento_antiretroviral, fecha_ini_trata, suspension_trata_anti, fecha_suspension, motivo_suspension, carga_viral, logaritmo, cd4_por, cd4_num, cd8_num, cd8_por, efectos_adversos, efectos_adversos_cuales, fecha_efecto, medicamento_efecto_causa, tratamiento_correctivo, esquemas_ant, esquemas_ant_cuales, adherencia, Cita_id_cita
+
+
+id_adherencia, adherencia_por, esquema, modificacion_esquema, adh_anterior, Tratamiento_antiretroviral_id_antiretroviral
+
+

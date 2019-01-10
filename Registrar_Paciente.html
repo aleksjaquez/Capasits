@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<!--
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Capasits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">CAPASITS</a></h1>
+					<!-- <span>Design by TEMPLATED</span>-->
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="#">Registrar Paciente</a></li>
+						<li><a href="Buscar_Paciente.html">Buscar Paciente</a></li>
+						<li><a href="Citas.html">Citas</a></li>
+						<li><a href="#">Estadisticas</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<ul class="nav nav-pills" aria-orientation="vertical">
+								<li class="nav-item">
+									<a class="nav-link active">Datos Personales</a>
+
+									
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+									
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link disabled">Antecedentes</a>
+
+									
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled"></a>
+									
+								</li>
+
+								
+							</ul>
+						</section>
+					</div>
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<form action="Registro1.php" method="post">
+							<h3>nombre</h3>
+							<input class="" name="nombre" id="nombre" type="text" size="50" placeholder="Nombre(s)" required>
+							<br><br>
+							<h3>apellido paterno</h3>
+							<input class="" name="ap_paterno" id="ap_paterno" type="text" size="50" placeholder="Apellido paterno" required>
+							<br><br>
+							<h3>apellido materno</h3>
+							<input class="" name="ap_materno" id="ap_materno" type="text" size="50" placeholder="Apellido materno" required>
+							<br><br>
+							<h3>edad</h3>
+							<input class="" name="edad" id="edad" type="text" size="50" placeholder="Edad" required>
+							<br><br>
+							<h3>fecha de naciemiento</h3>
+							<input type="date" name="fecha" id="fecha" required> 
+							<br><br>
+							<h3>nacionalidad</h3>
+							<input class="" name="nacionalidad" id="nacionalidad" type="text" size="50" placeholder="Nacionalidad" required>		
+						    <br><br>
+							<h3>estado civil</h3>
+							<select id="edo_civil" name="edo_civil" required>
+								<option>Seleccione</option>
+								<option value="Soltero">Soltero</option>
+								<option value="Comprometido">Comprometido</option>
+								<option value="Casado">Casado</option>
+								<option value="Divorciado">Divorciado</option>
+								<option value="Viudo">Viudo</option>
+							</select>
+							<br><br>
+							<h3>Derechohabiente</h3>
+							<input type="radio" data-toggle="collapse" href="#collapseExample" name="derecho" value="1"> SI   <input type="radio" name="derecho" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample">
+							
+							<h3>institucion</h3>
+							<input class="" name="institucion" id="institucion" type="text" size="50" placeholder="Institucion" >		
+						    <br><br>
+							<h3>folio seguro popular</h3>
+							<input class="" name="seg_popular" id="seg_popular" type="text" size="50" placeholder="Folio de seguro popular" >
+							<br><br>		
+						    </div>
+							<h3>ocupación</h3>
+							<input class="" name="ocupacion" id="ocupacion" type="text" size="50" placeholder="Ocupación" required>		
+						    <br><br>
+						    <h3>lugar de origen</h3>
+							<input class="" name="origen" id="origen" type="text" size="50" placeholder="Lugar de origen" required>		
+						    <br><br>
+						    <h3>domicilio</h3>
+							<input class="" name="calle" id="calle" type="text" size="35" placeholder="Calle" required>
+							<input class="" name="numero" id="numero" type="text" size="35" placeholder="Número" required>
+							<br><br>
+							<input class="" name="colonia" id="colonia" type="text" size="35" placeholder="Colonia" required>
+							<input class="" name="codigo" id="codigo" type="text" size="35" placeholder="Código postal" required>
+							<br><br>
+							<input class="" name="localidad" id="localidad" type="text" size="35" placeholder="Localidad" required>
+							<input class="" name="estado" id="estado" type="text" size="35" placeholder="Estado" required> 
+						    <br><br>
+						    <h3>teléfono</h3>
+							<input class="" name="telefono" id="telefono" type="text" size="50" placeholder="Teléfono" required>		
+						    <br><br>
+						    <h3>sexo</h3>
+								<input type="radio"  name="sexo" value="1"> Hombre <br>  
+								<input type="radio" data-toggle="collapse" href="#collapseExample1" name="sexo" value="2">Mujer
+							</select>	
+						    <br><br>
+						    <div class="collapse" id="collapseExample1">
+						    <h3>Embarazos Anteriores</h3>
+							<input type="radio" name="embarazoA" value="1" data-toggle="collapse" href="#collapseExample2">SI   <input type="radio" name="embarazoA" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample2">
+							<h3>perdida del producto</h3>
+							<input type="radio" name="perdida" value="1">SI   <input type="radio" name="perdida" value="2">NO
+							<br><br>
+							<h3>fecha de naciemiento</h3>
+							<input type="date" name="fechab" id="fechab"> 
+							<br><br>
+							<h3>profilaxis intraparto</h3>
+							<input type="radio" name="intraparto" value="1" data-toggle="collapse" href="#collapseExample3">SI   <input type="radio" name="intraparto" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample3">
+							<h3>tipo i</h3>
+							<input class="" name="tipoi" id="tipoi" type="text" size="50" placeholder="Tipo i">
+							<br><br>
+							<h3>tiempo i</h3>
+							<input class="" name="tiempoi" id="tiempoi" type="text" size="50" placeholder="Tiempo i">	
+						    <br><br>
+						    </div>	
+							<h3>profilaxis postparto</h3>
+							<input type="radio" name="postparto" value="1" data-toggle="collapse" href="#collapseExample4">SI   <input type="radio" name="postparto" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample4">
+							<h3>tipo p</h3>
+							<input class="" name="tipop" id="tipop" type="text" size="50" placeholder="Tipo p">
+							<br><br>
+							<h3>tiempo p</h3>
+							<input class="" name="tiempop" id="tiempop" type="text" size="50" placeholder="Tiempo p">		
+						    <br><br>
+							</div>
+							<h3>metodo resolucion embarazo</h3>
+							<input class="" name="resolucion" id="resolucion" type="text" size="50" placeholder="Metodo">		
+						    <br><br>
+							<h3>recibio lactancia</h3>
+							<input type="radio" name="lactancia" value="1">SI   <input type="radio" name="lactancia" value="2">NO
+							</div>
+							</div>	
+							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
+							</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>

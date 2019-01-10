@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<!--
+	Iridium by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Capasits</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">CAPASITS</a></h1>
+					<!-- <span>Design by TEMPLATED</span>-->
+				</div>
+				
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active"><a href="#">Registrar Paciente</a></li>
+						<li><a href="Buscar_Paciente.html">Buscar Paciente</a></li>
+						<li><a href="Citas.html">Citas</a></li>
+						<li><a href="no-sidebar.html">Estadisticas</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Main -->
+		<div id="main">
+			<div class="container">
+				<div class="row"> 
+
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<ul class="nav nav-pills" aria-orientation="vertical">
+								<li class="nav-item">
+									<a class="nav-link disabled">Datos Personales</a>
+
+									
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+									
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link disabled">Antecedentes</a>
+
+									
+								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+									
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link active">Antecedentes de Importancia</a>
+
+									
+								</li>
+							</ul>
+						</section>
+					</div>
+					
+					<!-- Content -->
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<form>
+							<h3>Antecedentes Heredofamiliares</h3>
+							<textarea name="ant_heredofamiliares" id="ant_heredofamiliares" rows="4" cols="70">Escribe aquí los antecedentes</textarea>
+							<br><br>
+							<h3>Escolaridad</h3>
+							<select id="escolaridad" required>
+								<option>Seleccione</option>
+								<option>Prescolar</option>
+								<option>Primaria</option> 
+								<option>Secundaria</option>
+								<option>Prepa-bachillerato</option>
+								<option>Licenciatura</option>
+								<option>Maestría</option>
+								<option>Doctorado</option>
+								<option>Post-Doctorado</option>
+							</select>	
+						    <br><br>
+							<h3>Tipo de Vivienda</h3>
+							<select id="vivienda" required>
+								<option>Seleccione</option>
+								<option>Urbana</option>
+								<option>Rural</option>  
+							</select>	
+						    <br><br>
+							<h3>Viajes Recientes</h3>
+							<input type="radio" name="viajes_rec" value="1" data-toggle="collapse" href="#collapseExample">SI   <input type="radio" name="viajes_rec" value="2">NO	
+						    <br><br>
+						    <div class="collapse" id="collapseExample">
+							<h3>Cuales?</h3>
+							<input class="" name="viajes" id="viajes" type="text" size="50" placeholder="viajes" required>
+						    <br><br>
+							</div>
+							<h3>Convivencia con animales</h3>
+							<input type="radio" name="conv_animales" value="1" data-toggle="collapse" href="#collapseExample2">SI   <input type="radio" name="conv_animales" value="2">NO	
+							<br><br>
+							<div class="collapse" id="collapseExample2">
+							<h3>Cuáles?</h3>
+							<input type="checkbox" name="mascotas" value="Perro">Perros &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+							<input type="checkbox" name="mascotas" value="Gato">Gatos &nbsp&nbsp&nbsp&nbsp&nbsp
+							<input type="checkbox" name="mascotas" value="Ave">Aves &nbsp&nbsp&nbsp&nbsp&nbsp
+							<input type="checkbox" name="mascotas" value="Reptil">Reptiles<br>
+							<input type="checkbox" name="mascotas" value="Roedor">Roedores &nbsp
+							<input type="checkbox" name="mascotas" value="Anfibio">Anfibios &nbsp&nbsp
+							<input type="checkbox" name="mascotas" value="Otro">Otros<br>	
+						    <br><br>
+						</div>
+						    <h3>Tabaquismo</h3>
+							<input type="radio" name="tabaquismo" value="1" data-toggle="collapse" href="#collapseExample3">Activo   <input type="radio" name="tabaquismo" value="2">No Activo
+							<br><br>
+							<div class="collapse" id="collapseExample3">
+							<h3>Cantidad</h3>
+							<input class="" name="tab_cantidad" id="tab_cantidad" type="number" size="10" placeholder="Cantidad">
+							<br><br>
+							<h3>Frecuencia</h3>
+							<select id="tab_frecuencia" required>
+								<option>Seleccione</option>
+								<option>Diaria</option>
+								<option>Semanal</option>
+								<option>Mensual</option>  
+							</select>	
+							<br><br>
+							<h3>Años de Adicción</h3>
+							<input class="" name="tab_años" id="tab_años" type="number" size="10" placeholder="Años">
+							<br><br>
+						</div>
+							<h3>Alcoholismo</h3>
+							<input type="radio" name="alcoholismo" value="1" data-toggle="collapse" href="#collapseExample4">Activo   <input type="radio" name="alcoholismo" value="2">No Activo
+							<br><br>
+							<div class="collapse" id="collapseExample4">
+							<h3>Cantidad</h3>
+							<input class="" name="alc_cantidad" id="alc_cantidad" type="number" size="10" placeholder="Cantidad">
+							<br><br>
+							<h3>Frecuencia</h3>
+							<select id="alc_frecuencia" required>
+								<option>Seleccione</option>
+								<option>Diaria</option>
+								<option>Semanal</option>
+								<option>Mensual</option>  
+							</select>	
+							<br><br>
+							<h3>Años de Adicción</h3>
+							<input class="" name="alc_años" id="alc_años" type="number" size="10" placeholder="Años">
+							<br><br>
+						</div>
+							<h3>Inmunización</h3>
+							<input type="radio" name="inmunizacion" value="1" data-toggle="collapse" href="#collapseExample5">SI   <input type="radio" name="inmunizacion" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample5">
+							<h3>Cuáles?</h3>
+							
+						    <br><br>
+						</div>
+						    <h3>Cirugias</h3>
+							<input type="radio" name="cirugias" value="1" data-toggle="collapse" href="#collapseExample6">SI   <input type="radio" name="cirugias" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample6">
+							<h3>Cuáles?</h3>
+								
+						    <br><br>
+						</div>
+						    <h3>Fracturas</h3>
+							<input type="radio" name="fracturas" value="1" data-toggle="collapse" href="#collapseExample7">SI   <input type="radio" name="fracturas" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample7">
+							<h3>Cuáles?</h3>
+							
+						    <br><br>
+						</div>
+						    <h3>Alergias</h3>
+							<input type="radio" name="alergias" value="1" data-toggle="collapse" href="#collapseExample8">SI   <input type="radio" name="alergias" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample8">
+							<h3>Cuáles?</h3>
+								
+						    <br><br>
+						</div>
+						    <h3>Otros Medicamentos</h3>
+							<input type="radio" name="otros_medicamentos" value="1" data-toggle="collapse" href="#collapseExample9">SI   <input type="radio" name="otros_medicamentos" value="2">NO
+							<br><br>
+							<div class="collapse" id="collapseExample9">
+							<h3>Cuáles?</h3>
+								
+						    <br><br>
+						</div>
+							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
+							</form>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	
+	</body>
+</html>
