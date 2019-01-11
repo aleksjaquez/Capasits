@@ -62,7 +62,7 @@
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active">Estadificación</a>
+									<a class="nav-link disabled">Estadificación</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -74,7 +74,7 @@
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link disabled">Tratamiento Antifimico</a>
+									<a class="nav-link active">Tratamiento Antifimico</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -108,35 +108,47 @@
 								</li>								
 							</ul>
 						</section>
-					</div>					
+					</div>
+					
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
 							<header>
-								<h2>Estadificación</h2>
+								<h2>Tratamiento Antifimico</h2>
 							</header>
-							<form>	
-							<h3>Estadio</h3>
-							<input type="radio" name="estadio" value="A"> A 
-							<input type="radio" name="estadio" value="B"> B 
-							<input type="radio" name="estadio" value="C"> C 
-							<br><br>
-							<h3>Fecha</h3>
-							<input type="date" name="fecha_ini" id="fecha" required> 
-							<br><br>
-							<h3>Tratamiento</h3>
-							<input type="text" name="tratamiento" max="99" placeholder="tratamiento" required>
-							<br><br>
-							<h3>Suspension</h3>
-							<input type="radio" name="suspension" value="1"> Si
-							<input type="radio" name="suspension" value="2"> No
-							<br><br>
-							<h3>Motivo</h3>
-							<input type="text" name="motivo" size="50" maxlength="999" value="motivo" >
-							<br><br>
-							<h3>Terminacion</h3>
+							<form>
+							<h3>Fecha de diagnóstico</h3>
 							<input type="date" name="fecha_termi" id="fecha" required>
-							<br><br>    
+							<br><br>
+							<h3>Localización</h3>
+							<input type="text" name="localizacion" max="199" placeholder="Por órganos" required>
+							<br><br>
+							<h3>Método de diagnóstico </h3>
+							<input type="text" name="metodo_diagnostico" max="199" placeholder="Separar por coma" required>
+							<br><br>
+							<h3>TB (tubercolosis) activa</h3>
+							<input type="radio" name="tb" value="1"> Si 
+							<input type="radio" name="tb" value="2"> No
+							<br><br>
+							<h3>Curado</h3>
+							<input type="text" name="curado" max="30" placeholder="Estado" required>
+							<br><br>
+							<h3>Tratamiento paciente virgen</h3>
+							<input type="text" name="trata_virgen" max="199" placeholder="Descripcion" required>
+							<br><br>		
+							<h3>Recaída</h3>
+							<input type="radio" name="recaida" value="1"> Si 
+							<input type="radio" name="recaida" value="2"> No
+							<br><br>
+							<h3>Fecha de recaída</h3>
+							<input type="date" name="fecha_termi" id="fecha" required><br><br>
+							<h3>Tratamiento recaída</h3>							
+							<input type="text" name="trta_recaida" max="199" placeholder="Descripcion" required>
+							<br><br>
+							<h3>Tratamiento TB multi-resistente</h3>
+							<input type="radio" name="tb" value="1"> Si 
+							<input type="radio" name="tb" value="2"> No
+							<br><br>
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>
 					</div>					

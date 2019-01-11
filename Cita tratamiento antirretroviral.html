@@ -62,7 +62,7 @@
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link active">Estadificación</a>
+									<a class="nav-link disabled">Estadificación</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -80,7 +80,7 @@
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link disabled">Tratamiento Antirretroviral</a>
+									<a class="nav-link active">Tratamiento Antirretroviral</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
@@ -108,35 +108,79 @@
 								</li>								
 							</ul>
 						</section>
-					</div>					
+					</div>
+					
 					<!-- Content -->
 					<div id="content" class="8u skel-cell-important">
 						<section>
 							<header>
-								<h2>Estadificación</h2>
+								<h2>Trata Antirretroviral</h2>
 							</header>
-							<form>	
-							<h3>Estadio</h3>
-							<input type="radio" name="estadio" value="A"> A 
-							<input type="radio" name="estadio" value="B"> B 
-							<input type="radio" name="estadio" value="C"> C 
+							<form>
+							<h3>Tratamiento antirretroviral</h3>
+							<input type="radio" name="efectos_adversos" value="Caletra"> Caletra<br>
+							<input type="radio" name="efectos_adversos" value="Trubada"> Trubada<br>
+							<input type="radio" name="efectos_adversos" value=otro_trata_anti > Otro:
+							<input type="text" name="otro_trata_anti" max="199" placeholder="Cual?" required>
 							<br><br>
-							<h3>Fecha</h3>
-							<input type="date" name="fecha_ini" id="fecha" required> 
+							<h3>Fecha inicio</h3>
+							<input name="frecuencia_car" id="frecuencia_car" type="date" required>
 							<br><br>
-							<h3>Tratamiento</h3>
-							<input type="text" name="tratamiento" max="99" placeholder="tratamiento" required>
+							<h3>Suspencion</h3>
+							<input type="radio" name="suspension_trata_anti" value="1"> Si
+							<input type="radio" name="suspension_trata_anti" value="2"> No
 							<br><br>
-							<h3>Suspension</h3>
-							<input type="radio" name="suspension" value="1"> Si
-							<input type="radio" name="suspension" value="2"> No
+							<h3>Fecha de suspensión</h3>
+							<input name="frecuencia_car" id="frecuencia_car" type="date" required>
 							<br><br>
 							<h3>Motivo</h3>
-							<input type="text" name="motivo" size="50" maxlength="999" value="motivo" >
+							<input type="text" name="motivo_suspension" max="199" placeholder="Especificar" required>
 							<br><br>
-							<h3>Terminacion</h3>
-							<input type="date" name="fecha_termi" id="fecha" required>
-							<br><br>    
+							<h3>Carga viral</h3>
+							<input name="carga_viral" id="carga_viral" type="number" max="9999999999" required>
+							<br><br>
+							<h3>Logaritmo</h3>
+							<input name="logaritmo" id="logaritmo" type="number" max="999999999" required>
+							<br><br>
+							<h3>CD4</h3>
+							<input name="cd4_num" id="cd4_num" type="number" max="999" step="1" required>
+							<br><br>
+							<h3>% CD4 </h3>
+							<input name="cd4_por" id="cd4_por" type="number" max="100" step=".1" required>
+							<br><br>
+							<h3>CD8</h3>
+							<input name="cd8_num" id="cd8_num" type="number" max="999" step="1" required>
+							<br><br>
+							<h3>% CD8</h3>
+							<input name="cd8_por" id="cd8_por" type="number" max="100" step=".1" required>
+							<br><br>
+							<h3>Efectos Adversos</h3>
+							<input type="radio" name="efectos_adversos" value="1"> Si
+							<input type="radio" name="efectos_adversos" value="2"> No
+							<br><br>
+							<h3>Cuales? </h3>
+							<input type="text" name="efectos_adversos_cuales" max="199" placeholder="Especificar" required>
+							<br><br>
+							<h3>Fecha</h3>
+							<input name="frecuencia_car" id="frecuencia_car" type="date" required>
+							<br><br>
+							<h3>Medicamento causal</h3>
+							<input type="text" name="medicamento_efecto_causa" max="99" placeholder="Especificar" required>
+							<br><br>
+							<h3>Tratamiento efectuado</h3>
+							<input type="text" name="tratamiento_correctivo" max="199" placeholder="Especificar y separar con coma" required>
+							<br><br>
+							<h3>Esquemas anteriores</h3>
+							<input type="radio" name="esquemas_ant" value="1"> Si
+							<input type="radio" name="esquemas_ant" value="2"> No
+							<br><br>
+							<h3>Cuales?</h3>
+							<input type="text" name="esquemas_ant_cuales" max="299" placeholder="Especificar y separar con coma" required>
+							<br><br>
+							<h3>Adherencia</h3>
+							<input type="radio" name="adherencia" value="1"> Si
+							<input type="radio" name="adherencia" value="2"> No
+							<br><br>								    
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>
 					</div>					
