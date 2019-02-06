@@ -17,6 +17,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/colapso.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -128,14 +129,16 @@
 							<input type="text" name="tratamiento" max="99" placeholder="tratamiento" required>
 							<br><br>
 							<h3>Suspension</h3>
-							<input type="radio" name="suspension" value="1"> Si
-							<input type="radio" name="suspension" value="2"> No
+							<input name="suspension" type="radio" value="1" class="yes" data-toggle="collapse" data-target="#collapseOne"/> Si
+         					<input name="suspension" type="radio" value="2" class="no" data-toggle="collapse" data-target="#collapseOne" checked/> No       							
 							<br><br>
+							<pp>
 							<h3>Motivo</h3>
 							<input type="text" name="motivo" size="50" maxlength="999" value="motivo" >
 							<br><br>
 							<h3>Terminacion</h3>
 							<input type="date" name="fecha_termi" id="fecha" required>
+							</pp>
 							<br><br>    
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>

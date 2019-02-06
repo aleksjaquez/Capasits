@@ -13,18 +13,19 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/colapso.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
+		<script src="js/init.js"></script>		
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->		
 	</head>
@@ -129,14 +130,14 @@
 							<input type="radio" name="esquema" value="3"> 3ro 
 							<input type="radio" name="esquema" value="4"> 4to
 							<br><br>
-							<h3>Modificacion</h3>
-							<input type="radio" name="modificacion" value="1" data-toggle="collapse" href="#collapseExample2"> Si 
-							<input type="radio" name="modificacion" value="2" data-toggle="collapse" href="#collapseExample2"> No						
-							<br><br>
-							<div class="collapse" id="collapseExample2">
-							<h3>Anterior</h3>
-							<input type="text" name="adh_anterior" max="45" placeholder="Adherencia anterior" required>
-							</div>							
+							<h3>Modificacion</h3>							
+							<input name="modificacion_esquema" type="radio" value="1" class="yes" data-toggle="collapse" data-target="#collapseOne"/> Si
+         					<input name="modificacion_esquema" type="radio" value="2" class="no" data-toggle="collapse" data-target="#collapseOne" checked/> No       
+         					<br><br>
+         					<pp>            				
+            					<h3>Anterior</h3>								
+            					<input type="text" name="adh_anterior" max="45" placeholder="Adherencia anterior" required>
+         					</pp>         															
 							<br><br>							
 							<button type="submit" class="btn btn-dark">Guardar y avanzar</button>
 							</form>
