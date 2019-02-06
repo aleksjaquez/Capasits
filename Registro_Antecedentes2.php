@@ -2,6 +2,8 @@
 
         $link = mysqli_connect("localhost","root","","capasits")or die("<h2>No se encuentra el servidor</h2>");
 
+
+
         $Factor=$_POST['factor'];
         $Sex=$_POST['inicio_sex'];
         $Pareja=$_POST['num_parejas'];
@@ -183,7 +185,9 @@
     echo    $cMed;
 */
         
-
+        $queryAnte2="INSERT INTO antecedentes_2(ant_heredofamiliares,escolaridad,vivienda,viajes_rec,viajes,conv_animales,animales,tabaquismo,tab_cantidad,tab_frecuencia,tab_años,alcoholismo,alc_cantidad,alc_frecuencia,alc_años,inmunizacion,inm_cuales,cirugias,cirugias_cuales,fracturas,fracturas_cuales,alergias,alergias_cuales,otros_medicamentos,otros_med_cuales) VALUES('$AHere','$Escolar','$Vivi','$ViajesR','$Viajes','$Convive','$Masc','$Tab','$TabCant','$TabFrec','$TabAnio','$Alco','$AlcoCant','$AlcoFrec','$AlcoAnio','$Inmu','$cInmun','$Ciru','$cCiru','$Frac','$cFrac','$Aler','$cAler','$OMed','$cMed')";
+            
+        $link->query($queryAnte2);
         
         if($Derechohab=="1"){
 
@@ -253,9 +257,7 @@
         }
 
 
-    $queryAnte2="INSERT INTO antecedentes_2(ant_heredofamiliares,escolaridad,vivienda,viajes_rec,viajes,conv_animales,animales,tabaquismo,tab_cantidad,tab_frecuencia,tab_años,alcoholismo,alc_cantidad,alc_frecuencia,alc_años,inmunizacion,inm_cuales,cirugias,cirugias_cuales,fracturas,fracturas_cuales,alergias,alergias_cuales,otros_medicamentos,otros_med_cuales) VALUES('$AHere','$Escolar','$Vivi','$ViajesR','$Viajes','$Convive','$Masc','$Tab','$TabCant','$TabFrec','$TabAnio','$Alco','$AlcoCant','$AlcoFrec','$AlcoAnio','$Inmu','$cInmun','$Ciru','$cCiru','$Frac','$cFrac','$Aler','$cAler','$OMed','$cMed')";
-        
-    $link->query($queryAnte2);
+    
 
     header("Location: Citas.html"); 
 

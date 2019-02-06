@@ -83,7 +83,16 @@
 									<a class="nav-link disabled"></a>
 									
 								</li>
+								<li class="nav-item">
+									<a class="nav-link disabled">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+									
+								</li>
 
+								<li class="nav-item">
+									<a class="nav-link disabled">Antecedentes de Importancia</a>
+
+									
+								</li>
 								
 							</ul>
 						</section>
