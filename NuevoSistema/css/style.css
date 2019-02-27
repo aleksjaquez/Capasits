@@ -1,0 +1,28 @@
+#izquierda, #derecha {
+   		width:170px;  
+	}
+	
+	#main{
+		position: center;
+
+	}
+	#contenido { 
+	 	
+   		width:370px; 
+   		margin-left: 160px; 
+	}
+
+	#izquierda {  	
+   		float: left;  
+	}    
+	#derecha {  	
+  	 	float: right;  
+	}	
+
+	#buscarC, #buscarP{
+		width:300px; 
+	}
+
+	#Usuario{
+		width:600px; 
+	}
